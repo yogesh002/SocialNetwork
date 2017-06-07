@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Settings</title>
+</head>
+<body>
+	<div>
+		<h1>User Details : </h1>
+		<ul ng-repeat = "(key, value) in controller.userDetails">
+			<li>{{key}}  <input type="text" ng-init="controller.inputs[key] = value" ng-model="controller.inputs[key]" focus-select></li>
+		</ul>
+		<input type="button" value="Submit" ng-click="controller.saveUserDetails(controller.inputs)" class="btn btn-primary">
+	</div>
+	<div>
+		{{controller.updateSuccessMsg}}
+	</div>
+</body>
+</html>

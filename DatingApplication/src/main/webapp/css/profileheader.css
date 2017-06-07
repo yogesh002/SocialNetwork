@@ -1,0 +1,66 @@
+#parishram_logo {
+	cursor: pointer;
+}
+
+.fa-user-plus, .fa-globe {
+	color: white;
+}
+
+.fa {
+	font-size: 15px;
+}
+
+li>i {
+	padding: 18px;
+	text-align: center;
+	position: relative;
+	color: white;
+}
+
+#total_frn_req {
+	position: relative;
+}
+
+#total_frn_req, #total_frn_req>i {
+	font-weight: bolder;
+}
+
+#total_frn_req>i {
+	padding-right: 0px;
+}
+
+#total_frn_req>span {
+	background-color: #E62117;
+	color: white;
+	font-weight: bolder;
+	padding: 2px;
+	position: absolute;
+	top: -3px;
+}
+
+.navigation {
+	background-color: black;
+}
+
+nav.navbar.navbar-inverse {
+	padding: 0px;
+	margin: 0px;
+}
+
+.navbar-header>a {
+	color: white;
+	padding-right: 5px;
+}
+
+.navbar-header>a:hover {
+	text-decoration: none;
+	color: pink;
+}
+
+.list-group {
+	border-bottom: 1px solid black;
+}
+
+.frn_req_list{
+	background-color: white;
+}

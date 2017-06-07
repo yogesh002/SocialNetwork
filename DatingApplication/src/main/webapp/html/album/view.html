@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>View Photos</title>
+</head>
+<body>
+	<ul>
+		<li ng-repeat = "album in controller.albums" class="albumview albums" ui-sref="viewPhotosInAlbum({album_id : album.albumId})">
+			{{album.albumName}}
+		</li>	
+	</ul>
+	<div class="back_btn" ui-sref="home">
+		<span>Back</span>
+	</div>
+</body>
+</html>

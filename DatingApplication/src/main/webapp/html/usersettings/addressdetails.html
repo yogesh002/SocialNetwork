@@ -1,0 +1,14 @@
+<div>
+	<h1>Address Details :</h1>
+	<div ng-repeat="(index, value) in controller.addressDetails">
+	<ul>
+		<li ng-repeat="(key, valueObj) in value">{{key}} 
+			<input type="text" ng-init="controller.inputs[key] = valueObj" ng-model="controller.inputs[key]" focus-select>
+		</li>
+	</ul>
+	<input type="button" value="Submit" ng-click="controller.saveAddressDetails(controller.inputs)" class="btn btn-primary">
+	</div>	
+	<div>
+		{{controller.updateSuccessMsg}}
+	</div>
+</div>

@@ -1,0 +1,57 @@
+.videoWrapper, .searchBox {
+	display: block;
+	float: right;
+	font-family: sans-serif;
+	font-size: 14px;
+	color: maroon;
+}
+
+.videoWrapper {
+	background-color: white;
+}
+
+.search_btn {
+	margin-top: 20px;
+}
+
+#playlist_createForm{
+	background-color: white;	
+	margin-top:60px;
+}
+
+#playlist_createForm div{
+	margin-top: 10px;
+}
+
+#showPlaylistBtn{
+	margin-top: 45px;	
+}
+
+#showPlaylistBtn a{
+	text-decoration: none;
+	color: blue;
+	font-weight: bold;
+	font-size: 1.2em;
+	background-color: #eeeeee;
+	color: #004d40;
+	padding: 10px 2px;
+}
+#showPlaylistBtn a:hover{
+	text-decoration: underline;
+}
+.playlist_adder{
+	padding: 20px;
+}
+
+.playlist_adder input, .playlist_adder select{
+	margin-right: 35px;
+}
+
+.player{
+	padding:20px;
+	margin-bottom: 10px;
+}
+
+.player h4{
+	text-align: center;
+}

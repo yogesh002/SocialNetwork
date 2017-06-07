@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.2.xsd 
+	http://www.springframework.org/schema/mvc 
+	http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd 
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+	<context:component-scan base-package="com.parishram" />
+	<mvc:annotation-driven />
+	<mvc:default-servlet-handler />
+	<mvc:resources mapping="/HTML/**" location="/HTML/" />
+	<mvc:resources mapping="/CSS/**" location="/CSS/" />
+	<mvc:resources mapping="/js/**" location="/js/" />
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:jdbc.properties" />
+	</bean>
+	<!-- use spring's jdbc template -->
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<!-- <bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" /> -->
+	<!-- configure datasource -->
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${jdbc.driverClassName}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+	</bean>
+	<bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basename" value="classpath:i18n" />
+		<property name="defaultEncoding" value="UTF-8" />
+	</bean>
+	<bean id="jspViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	<bean id="gson" class="com.google.gson.Gson" />
+	<bean id="profileDetailsModel" class="com.parishram.model.ProfileDetailsModel" />
+	<bean id="userDetailsModel" class="com.parishram.model.UserDetailsModel" />
+	<bean id="addressDetailsModel" class="com.parishram.model.AddressDetailsModel" />
+	<bean id="educationDetailsModel" class="com.parishram.model.EducationDetailsModel" />
+	<bean id="contactForm" class="com.parishram.model.ContactFormModel" />
+	<bean id="userDetailsModelValidator" class="com.parishram.bean.validation.UserDetailsModelValidator" />
+	<bean id="recieveEmailChannel" class="org.springframework.integration.channel.DirectChannel" />
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="${auth.host}" />
+		<property name="port" value="${auth.port}" />
+		<property name="username" value="${auth.username}" />
+		<property name="password" value="${auth.password}"  />
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.smtp.auth">${auth.mail.smtp.auth}</prop>
+				<prop key="mail.smtp.starttls.enable">${auth.mail.smtp.starttls.enable}</prop>
+				<prop key="mail.smtp.quitwait">${auth.smtp.quitwait}</prop>
+			</props>
+		</property>
+	</bean>
+</beans>

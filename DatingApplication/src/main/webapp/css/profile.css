@@ -1,0 +1,309 @@
+.article_content {
+	font-family: 'Slabo 29px', serif;
+	text-align: center;
+}
+
+.section {
+	text-align: justify;
+	background-color: rgb(249, 249, 249);
+	margin: auto;
+	padding: 10px;
+	height: 150%;
+}
+
+.navbar-nav {
+	float: right;
+}
+
+.body {
+	background-color: rgb(226, 226, 226);
+}
+
+.email_header {
+	padding-top: 25px;
+}
+
+.telephone_header {
+	padding-top: 25px;
+}
+
+.social_media {
+	padding-bottom: 5px;
+}
+
+.mail_me {
+	padding-bottom: 10px;
+}
+
+.copyright_msg_container {
+	background-color: black;
+	padding: 5px;
+}
+
+.copyright_msg {
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	margin: 0px;
+}
+
+.list-group-item {
+	padding: 0px;
+	background-color: black;
+}
+
+.list-group {
+	background-color: black;
+	padding: 0px;
+	margin: 0px;
+	box-shadow: none;
+}
+
+.navbar-inverse .navbar-nav li a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+	background-color: navy;
+}
+
+.dropdown-menu li a {
+	color: white;
+	font-size: medium;
+}
+
+#read_more_one, #read_more_two {
+	font-style: italic;
+	color: blue;
+}
+
+#read_more_one:hover, #read_more_two:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	color: blue;
+	font-weight: bold;
+}
+
+.hidden_content_one, .hidden_content_two {
+	display: none;
+}
+
+/* .avatar {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+} */
+
+/* #profile_image {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	position: absolute;
+} */
+
+/* .avatar_parent {
+	margin-top: 2%;
+	height: 50%;
+} */
+
+/* .poststatus {
+	margin-top: 2%;
+}
+ */
+/* .statusbox {
+	background-color: rgb(226, 226, 226);
+	padding: 15px 15px 55px 15px;
+	border-radius: 5px;
+	height: 50%;
+	overflow: auto;
+} */
+
+.nav_logo {
+	display: inline-block;
+	font-family: 'Kreon';
+	font-weight: 700;
+	font-size: 2.5em;
+	color: rgb(233, 80, 101);
+	float: left;
+	padding-right: 20px;
+}
+
+.navbar {
+	border-radius: 0px;
+}
+
+.glyphicon-user {
+	padding: 10px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+.glyphicon-user:hover{
+	color:#FFCDD2;
+	text-decoration: none;
+}
+
+/* #btn_status {
+	padding-top: 10px;
+	float: right;
+} */
+
+#thumbsup, #thumbsdown, #comment {
+	font-size: 20px;
+	font-weight: bolder;
+	color: #9E9E9E;
+}
+
+#commentbox {
+	padding: 0px;
+	margin-top: 20px;
+}
+
+#commentbox_parent {
+	position: relative;
+}
+
+/* .preference_btn {
+	margin-top: 10px;
+}
+ */
+#thumbsup:hover, #thumbsdown:hover {
+	cursor: pointer;
+}
+
+#updateprofilemenu {
+	width: 450px;
+	height: 400px;
+}
+
+#profile_pic>img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#updateprofilemenu, #updateprofilist {
+	float: left;
+	padding: 2%;
+}
+
+#updateprofilist {
+	margin-left: 10px;
+	width: 55%;
+}
+
+.update_pic {
+	padding: 20px 0px 20px 0px;
+}
+
+.editDetailsEditLink {
+	padding: 10px;
+	background-color: rgba(242, 242, 241,0.6);
+	border-bottom: 1px solid #004D40;
+	margin-bottom: 5px;
+}
+
+.editDetailsEditLink:hover {
+	cursor: pointer;
+	background-color: #E0F7FA;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.editDetailsEditLink:active {
+	background-color: #80DEEA;
+}
+
+.editDetailsEditLink:visited {
+	background-color: #009688;
+}
+
+.editDetailsEditLink>a {
+	color: #004D40;
+	font-family: Libre;
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+.editDetailsTitle {
+	font-size: 1.5em;
+}
+
+.editDetailsEditLink>a>i {
+	color: #1A237E;
+}
+
+.editDetailsTitle,.title>th {
+	color: #1A237E;
+	font-size: x-large;
+	text-align:center;
+	font-family: Libre;
+}
+.lebel, .originalValue, .editedValue,.editBtn {
+	font-size: medium;
+	font-family: Libre;
+	color:#212121;
+	
+}
+.lebel{
+	font-weight:bold;
+	color: #1A237E;
+}
+.body{
+	background-color:black;
+}
+@media (min-width: 768px) {
+    .navbar-collapse {
+        height: auto !important;
+        padding-left: 0 !important;
+    }
+}
+
+
+.nav> li{
+	border-left: 1px solid rgba(255,255,255, 0.1);
+	
+}
+#userId{
+	color: blue;
+	font-weight: bolder;
+	font-size: 15px;
+}
+#comments{
+	color: brown;
+	font-size: 15px;
+}
+
+.details_select{
+	padding: 20px;
+	color: green;
+	font-weight: bold;
+	border-bottom: 1 px solid black;
+	background-color: green;
+	color: white;
+	font-weight: bolder;
+	width: 25%;
+	margin: 10px;
+	list-style-type: none;
+}
+
+.details_select:hover{
+	cursor: pointer;
+	background-color: purple;
+}
+
+.update_title{
+	text-align: center;
+	color: black;
+	margin-bottom: 50px;
+	font-family: serif;
+}
+
+.result li{
+	list-style-type: none;
+	padding: 5px;
+	margin: 10px;
+}

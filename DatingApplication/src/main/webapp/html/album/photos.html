@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Photos</title>
+</head>
+<body>
+	<div class="back_btn" ui-sref="viewAllAlbumsOfUser">
+		<span>Back</span>
+	</div>
+	<div>
+	<ul>
+		<li ng-repeat = "imageInfo in controller.imageData.images" class="col-md-4 photos">
+			<img alt="IMAGE" src="{{imageInfo.image}}">
+		</li>
+	</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,450 @@
+.nav_logo {
+	color: rgb(98, 109, 7);
+	display: inline-block;
+	font-family: 'Kreon';
+	font-weight: 700;
+	font-size: 2.5em;
+	float: left;
+	margin-left: 15px;
+}
+
+.nav_logo:hover {
+	color: #A85D1B;
+	cursor: pointer;
+}
+
+.info {
+	float: right;
+}
+
+.indeximg {
+	overflow: hidden;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+		url('../Images/indeximg.jpg');
+	color: white;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	margin-bottom: 5px;
+}
+
+.policy_links, .policy_links>li {
+	display: inline;
+	list-style-type: none;
+	padding: 15px;
+	font-size: 1.1em;
+}
+
+.form-group {
+	padding: 20px;
+}
+
+input[type='submit'] {
+	margin-top: 20px;
+}
+
+.usernamepassbox {
+	border-top: 1px solid white;
+	padding-top: 2%;
+	margin-left: 15px;
+}
+
+.row {
+	display: block;
+}
+
+.btn_signup {
+	padding: 50px;
+	float: right;
+}
+
+.btn-default {
+	border: 1px solid red;
+}
+
+.navbar {
+	margin: 0px;
+	border-radius: 0px;
+}
+
+.navbar ul {
+	margin-right: 10px;
+}
+
+.testimonials {
+	height: 450px;
+	margin-top: 20px;
+	background-color: white;
+}
+
+.testimonial {
+	padding: 0px;
+	overflow: hidden;
+}
+
+.testimonial_img {
+	height: 50%;
+	font-size: 15em;
+	padding: 15px;
+}
+
+.quote {
+	font-size: 1.8em;
+	color: white;
+}
+
+.truth {
+	background-color: #0f3443;
+	opacity: 0.6;
+	padding: 0px;
+	padding: 10px 0 0 10px;
+}
+
+.bolckquote {
+	width: 100%;
+}
+
+section {
+	overflow: hidden;
+	padding: 0px;
+}
+
+.copyright_msg {
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin: 0px;
+}
+
+.signup_btn {
+	border: 1px solid orange;
+	box-sizing: border-box;
+}
+
+#login_title {
+	font-size: 2em;
+	font-family: Kreon;
+	padding-bottom: 10px;
+	margin-left: 15px;
+}
+
+#title {
+	text-align: center;
+}
+
+.table_header {
+	padding: 20px;
+}
+
+.table_header>div {
+	text-align: left;
+	font-weight: bolder;
+	font-size: 1em;
+	color: purple;
+}
+
+.editstatus {
+	font-weight: bolder;
+	font-size: 28px;
+	color: red;
+	text-align: center;
+}
+
+.mail {
+	background: linear-gradient(rgba(15, 52, 67, 0.9),
+		rgba(52, 232, 158, 0.5));
+	padding-top: 50px;
+}
+
+.mail_wrap {
+	width: 70%;
+	margin: 0 auto;
+	clear: both;
+}
+
+.control-label {
+	color: white;
+	font-family: Kreon;
+	font-size: 19px;
+}
+
+.mail_title {
+	font-family: Kreon;
+	text-align: center;
+	color: white;
+}
+
+.mail_btn {
+	font-family: Kreon;
+	color: black;
+	font-weight: bold;
+	position: relative;
+	padding: 10px;
+	float: right;
+	display: block;
+	width: 78%;
+	right: 20px;
+	background: linear-gradient(rgba(28, 216, 210, 0.5),
+		rgba(147, 237, 199, 0.5));
+}
+
+.socialmedia {
+	overflow: auto;
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	position: relative;
+	left: 150px;
+	top: 10px;
+}
+
+.socialmedia li {
+	float: left;
+	list-style-type: none;
+	font-size: 25px;
+	margin-left: 60px;
+	margin-top: 20px;
+}
+
+.socialmedia li i {
+	color: #0f3443;
+}
+
+html {
+	background-color: rgb(244, 244, 244);
+}
+
+.footer_content {
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.usernamepass_box {
+	margin-left: 15px;
+}
+
+.btn-success {
+	margin-left: 15px;
+}
+
+#password {
+	margin-bottom: 10px;
+}
+
+.form-control {
+	color: #53346D;
+}
+
+#admin_profilePage {
+	text-align: right;
+	margin-right: 10px;
+	font-size: 15px;
+}
+
+#admin_profilePage a:hover{
+	text-decoration: none;
+	background-color: #FFF3E0;
+	color: #1A237E;
+	font-weight: bold;
+	padding : 10px;
+	
+}
+
+.fa-envelope:hover, #newmsgcount:hover{
+	cursor: pointer;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#role {
+	border-radius: 5px;
+}
+#userlogo{
+	padding-top: 10px;
+}
+.table>tbody>tr>th{
+	border: 0px;
+}
+table{
+	width: 100%;
+}
+th{
+	color: purple;
+}
+.index_container{
+	position: relative;
+	padding: 0px;
+	overflow: hidden;
+}
+#back_btn{
+	background-color: #00BFA5;
+	color: white;
+	font-weight: bold;
+	padding: 8px 31px;
+	float: right;
+	margin-top: 20px;
+	clear: both;
+}
+#back_btn:hover{
+	cursor: pointer;
+	color: black;
+}
+#emailDetails:not(.sent_date){
+	list-style-type: none;
+	color: black;
+	font-weight: bold;
+	text-align:left;
+}
+#emailDetails div {
+	overflow: hidden;
+	white-space: nowrap;
+	vertical-align: middle;
+	font-size: 1em;
+	font-family: sans-serif;
+}
+
+#msg {
+	color: #777;
+	font-size: 85%;
+	font-family: arial, sans-serif;
+}
+
+.sent_date {
+	text-align: right;
+}
+
+.emailnav {
+	float: left;
+	width: 100px;
+	height: 100%;
+	display: inline-block;
+	margin: 25px 0px;
+	padding-right: 15px;
+}
+
+.emailnav div {
+	padding: 5%;
+}
+
+.emailItems {
+	margin: 0 auto;
+	font-family: sans-serif;
+}
+
+.active {
+	color: red;
+	font-weight: bold;
+}
+
+.trash {
+	width: 100%;
+	padding: 10px;
+	background-color: #B71C1C;
+	color: white;
+	font-size: 25px;
+	text-align: left;
+}
+.replyAction_btn {
+	position: absolute;
+	bottom: 0px;
+	display: inline-block;
+	border-top: 1px solid #F5F5F5;
+	width: 100%;
+	padding: 2px 0px 5px 2px;
+}
+.replyAction_btn_child{
+	position: relative;
+}
+
+.replycontainer{
+	position: relative;
+	padding: 0px 0px 3px 0px;
+	margin-top: 20px;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.messgebox{
+	padding: 0px 20%;
+}
+
+#emailrow{
+	display: inline-block;
+	width: 70%;
+	border-bottom: 1px solid #d2d2d2;
+	cursor: pointer;
+}
+#selectemail{
+	display: inline-block;
+}
+.trash:hover{
+	cursor: pointer;
+	font-weight:bolder;
+	box-sizing: border-box;
+}
+
+.readmsg_format{
+	padding: 5px;
+	background-color: #FAFAFA;
+	color: black;
+	margin-bottom: 2px;
+}
+.msg_action{
+	background-color: 	;
+	margin-top: 20px;
+}
+.reply_close{
+	display:inline-block;
+	text-align: right;
+	
+}
+.reply_close:hover{
+	color: blue;
+}
+.hide_box{
+	position: absolute;
+	right: 2px;
+	cursor: pointer;
+	top: 25px;
+	padding: 3px;
+}
+
+.discard{
+	cursor: pointer;
+	font-size: 25px;
+	display: inline;
+	position: absolute;
+	bottom: 5px;
+	left: 80px;
+}
+
+.discard:hover{
+	color: red;
+}
+
+.readmsg_msg{
+	display: inline-block;
+	margin: 80px 0px 30px 0px;
+	background: none;
+}
+.markasread_color{
+	background-color: #FAFAFA;
+}
+.default_color{
+	background: none;
+}

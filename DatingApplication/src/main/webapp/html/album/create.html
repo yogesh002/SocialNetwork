@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create Album</title>
+</head>
+<body  class="container">
+
+<h3 ng-show = "controller.albumCreated == true && controller.confirmed != true">Album Successfully created. You are now ready to upload pictures in the album.</h3>
+<div class="album_icon">
+	<i class="fa fa-picture-o" aria-hidden="true" ng-click="controller.createstatus = 1"></i>
+</div>
+<div ng-show="controller.createstatus == 1" class="form-group album_input">
+	<label for="album_name">Album Name : </label>
+	<span ng-show = "controller.albumCreated == true">{{controller.album_name}}</span>
+	<div class="album_input_name" ng-hide="controller.albumCreated == true">
+		<input type="text" name="album_name" class="form-control" ng-model="controller.album_name">
+	</div>
+	<div class="album_btn_submit">
+		<input type="submit" value="SUBMIT" class="btn btn-primary" ng-click="controller.createAlbum(controller.album_name)"  ng-hide="controller.albumCreated==true">
+	</div>
+	<div>
+		<div  ng-show="controller.albumCreated == true && controller.confirmed != true">
+		<input 
+			name="uploadFile" 
+			id="fileUpload" 
+			multiple 
+			type="file"
+			choose-files= "chooseFiles(files)">
+			<span ng-hide = "controller.fileuploadsuccess == true"><input type="button" name="upload_pic" value = "UPLOAD" ng-click="controller.uploadPicture()"></span>
+		</div>
+	</div>
+	<div ng-show = "controller.fileuploadsuccess == true && controller.confirmed != true">
+		<input type="button" Value="Confirm" name="create_album_confirm" ng-click="controller.sendAlbumName(controller.album_name);">
+	</div>
+		<!-- <i class="fa fa-plus" aria-hidden="true"></i> -->
+	</div> 
+	<div>
+		{{controller.errorMessage}}
+	</div>
+	<div>
+		{{controller.successMessage}}
+	</div>
+	<div class="back_btn" ui-sref="home">
+		<span>Back</span>
+	</div>
+</body>
+</html>

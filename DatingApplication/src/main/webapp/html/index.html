@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Parishram</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Kreon:700'
+	rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/intro.css">
+<link rel="stylesheet" href="./css/font-awesome.css">
+<script src="js/angular.min.js"></script>
+</head>
+<body>
+<div class="container index_container">
+	<nav class="navbar navbar-default">
+		<span class="nav_logo">Parishram</span>
+		<ul class="info nav navbar-nav">
+			<li><a href="./">Home</a></li>
+			<li><a href="newUserSignUp" class="signup_btn">Sign Up</a></li>
+		</ul>
+	</nav>
+	<section class="indeximg">
+		<div>
+			<form name="myForm" method = "post" action="login" class="row userlogin" class="usernamepass_box">
+			<div class="form-group col-md-4">
+			<div id="login_title">
+				LOGIN
+			</div>
+			<div class="usernamepassbox">
+			<label for="username">User Name:</label>
+				<input type = "text" class="form-control" id="username" name="username" placeholder="Enter User Name">
+			<label for="password">Password:</label>	
+				<input type = "password" class="form-control" id="password" name="password" placeholder="Enter Password">
+				Remember Me: <input type="checkbox" name="remember-me"></div>
+				<div><input type = "submit" value = "Submit" class="btn btn-success"></div>
+			</div>
+			<div class="btn_signup col-md-4">
+				<a href="newUserSignUp"><input type="button" value="Sign Up" class="btn btn-default"></a>
+			</div>
+			</form>
+		</div>
+		 <article>
+		<div class="truth carousel slide container"  id="myCarousel" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<blockquote class="bolckquote">
+			 		<p class="quote">Parishram helped me connected with my loved ones!</p>	
+					<footer class="blockquote-footer">John Doe, Missouri</footer>	
+				</blockquote>
+   			 </div>
+			<div class="item">
+				<blockquote class="bolckquote">
+			 		<p class="quote">I am far away from home, but Parishram keeps me close to my home</p>	
+					<footer class="blockquote-footer">John Smith, New York</footer>	
+				</blockquote>
+   			 </div>
+			<div class="item">
+				<blockquote class="bolckquote">
+			 		<p class="quote">Thank you Parishram for helping me find my old school friends</p>	
+					<footer class="blockquote-footer">Mary Jane, Kentucky</footer>	
+				</blockquote>
+   			 </div>
+		</div>
+	  </div>
+	</article>
+	</section>	
+	<section class="mail">
+	<div class="mail_wrap">
+		<h1 class="mail_title">Contact Us</h1>
+		<form class="form-horizontal" role="form" action="contact" method="post">
+			<div class="form-group">
+				<label class="control-label col-md-2" for="name">Name:</label>
+				<div class="col-md-10">
+					<input type="text" class="form-control" id="name" name = "contact_name"
+						placeholder="Enter Name">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-md-2" for="email">Email:</label>
+				<div class="col-md-10">
+					<input type="email" class="form-control" id="email" name="contact_email"
+						placeholder="Enter email">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-md-2" for="message">Message:</label>
+				<div class="col-md-10">
+					<textarea rows="5" name="contact_msg" id="message" class="form-control" placeholder="Questions or Comments..."></textarea>
+				</div>
+			</div>
+			<input type="submit" class="mail_btn" value="SUBMIT">
+		</form>
+	</div>	
+		<div class="policy_links">
+		<ul class='socialmedia'>
+			<li><a href="http://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="http://linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="http://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="http://plus.google.com/"><i class="fa fa-google-plus"></i> </a></li>
+		</ul>
+	</div>
+	</section>	
+<div class="footer">
+	<p class="copyright_msg">&copy; 2016. Parishram. All rights reserved.</p>
+</div>	
+</div>
+</body>
+</html>

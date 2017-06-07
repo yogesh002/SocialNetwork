@@ -1,0 +1,121 @@
+.albumDetails {
+	list-style-type: none;
+	width: 30%;
+	margin-top: 80px;
+}
+.albumDetails li:hover {
+	background-color: #2d0039;
+	color: white;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.albumDetails li {
+	box-sizing: border-box;
+	padding: 10px 20px;
+	color: black;
+	background-color: aqua;
+	margin-bottom: 10px;
+}
+
+.album_icon>i {
+	font-size: 150px;
+}
+
+.album_icon>i:hover {
+	cursor: pointer;
+	color: blue;
+}
+
+.album_input {
+	width: 20%;
+	margin-bottom: 30px;
+}
+
+.album_input_name {
+	margin-bottom: 10px;
+}
+
+.btn_submit {
+	margin-top: 10px;
+}
+
+.more_album{
+	font-size: 150px;
+}
+.more_album:hover{
+	cursor: pointer;
+	color: blue;
+}
+.albumview{
+	list-style-type: none;
+	width: 20%;
+	height: 150px;
+	display: block;
+	float:left;
+	cursor: pointer;
+	margin: 3px;
+	font-size: 30px;
+	background-color: aqua;
+	text-align:center;
+}
+
+.fa-picture-o{
+	font-size: 100%;
+} 
+
+.photos{
+	list-style-type: none;
+	float: left;
+	margin:10px;
+}
+.photos img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.wrapper{
+	width: 100%;
+	overflow: hidden;
+	position:relative;
+}
+.back_btn{
+	width: 150px;
+	margin-top: 50px;
+	padding: 10px 20px;
+	color: white;
+	background-color: #008744;
+	clear:both;
+}
+
+.back_btn:hover{
+	font-weight: bolder;
+	background-color: #2d0039;
+	color: white;
+	cursor: pointer;
+}
+
+body, html{
+	position: relative;
+}
+
+.footer {
+	position: absolute; 
+	bottom: 0px;
+	padding: 7px;
+	text-align: center;
+	background-color: black;
+	font-size: 15px;
+	text-align: left;
+	width: 100%;
+}
+
+#title{
+	font-family: Kreon;
+	text-align: center;
+}
+
+.albums{
+	margin-bottom: 50px;
+}
+

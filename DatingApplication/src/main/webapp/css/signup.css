@@ -1,0 +1,91 @@
+.signup_body {
+	overflow: hidden;
+	height: 100%;
+	position: relative;
+}
+
+.signup_nav {
+	border: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+.signup_well {
+	border: 0px;
+}
+
+.signup_nav_logo {
+	cursor: pointer;
+}
+
+.signup_errorMsg {
+	font-size: 15px;
+	color: red;
+	padding-bottom: 5px;
+}
+
+.signup_errorblock {
+	padding-bottom: 10px;
+}
+
+.signup_errorGrpBox {
+	counter-reset: count;
+	text-align: center;
+	width: 80%;
+	margin: 1% auto 0% auto;
+	padding: 5px;
+	/* background-color: #F4FF81; add this css from jquery*/
+}
+
+.signup_footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 10px;
+	background-color: black;
+	margin: 0px;
+}
+
+.signup_submitBtn {
+	float: left;
+}
+
+.signup_cancelBtn {
+	float: right;
+}
+
+.signup_btnGroup {
+	padding-top: 2%;
+	padding-bottom: 2%;
+	width: 49%;
+	margin: 0 auto;
+}
+
+#signup_signupforgotpass {
+	padding-top: 3%;
+	width: 30%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#signup_signupforgotpass>a {
+	color: black;
+}
+
+body{
+	font-family: kreon;
+}
+
+.signup_header{
+	text-align: center;	
+	margin-bottom: 30px;
+	border-bottom: 1px solid black;
+	color: #000000;
+	font-weight: bolder;
+}
+
+.signup_signupform{
+	width: 70%;
+	margin: 0 auto;
+	color:#1A237E;
+}

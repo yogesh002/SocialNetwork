@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Messages</title>
+</head>
+<body>
+<nav class="emailnav">
+	<div class="active" ng-hide = "controller.isTrashed == true">Inbox ({{controller.totalNewEmails}})</div>
+	<div class="active" ng-show = "controller.isTrashed == true">Inbox ({{controller.totalEmails}})</div>
+	<div ng-click="controller.trashEmails();" id="trash_btn"><i class="fa fa-trash-o trash" aria-hidden="true">&nbsp;Trash</i></div>
+</nav>
+	<!-- <div>Total New Emails : {{controller.totalNewEmails}}</div> -->
+	<ul class="emailItems">
+		<li ng-repeat = "detail in controller.emailDetails" id="emailDetails">
+	<div id="selectemail">
+	<input 
+		type="checkbox" 
+		name = "emailselector"
+		value="{{detail.email_id}}"
+		ng-click="checkEmailsToDelete(detail.email_id)"
+		 >  
+	</div>
+		<div ui-sref="readmsg({msg_id : $index})" id="emailrow" ng-class='{"markasread_color":(controller.currentStatus.indexOf($index))>-1 || detail.read == 1}' ng-click='controller.updateStatus({$index : index });'>
+			<div class="col-md-3">
+				{{detail.from_user}}
+			</div> 
+			<!-- To : {{detail.to_user}}  -->
+			<div class="col-md-6">{{detail.subject}} <span id="msg">{{detail.message}}</span></div>
+			<div class="col-md-3 sent_date">{{detail.sent_date | date:'medium'}}</div> 
+		</div>
+		</li>
+	</ul>
+</div>	
+<div>
+	<span ng-click="controller.goBack();" id="back_btn">Back</span>
+</div>
+<div>
+	<empty-email-details message = "All Emails Deleted" total-emails = "controller.totalEmails"></empty-email-details> 
+</div>
+<div>
+	{{controller.errorMessage}}
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Read Messages</title>
+</head>
+<body>
+<div ui-sref="adminMsg" id="back_btn">Back</div>
+<div class="messgebox">
+<div id="msginfo">
+	<div class="readmsg_format">From : {{controller.getSenderEmail}}</div>
+	<div class="readmsg_format" >Sent Date : {{controller.sentDate| date:'medium'}}</div>
+	<div class="readmsg_format readmsg_msg">{{controller.getMessage}}</div>
+	<div class="msg_action">
+	<span class="reply" ng-click="show =! show" ng-hide="!show">
+		<a href="">Reply</a>
+	</span>
+</div>
+</div>
+<div class="form-group replycontainer" ng-show="!show">
+	<span class="reply_close" ng-click="show =! show"><i class="fa fa-times hide_box" aria-hidden="true"></i></span>
+	<label for="reply">Reply:</label>
+	<textarea class="form-control" rows="10" id="reply" ng-model = "controller.replymsg"></textarea>
+<div class="replyAction_btn">
+<div class="replyAction_btn_child">
+	<input type="button" class="btn btn-primary" value="Send" ng-click="controller.replycustomer(controller.replymsg)">
+	<div class="discard" ng-click="controller.discardMsg(controller.replymsg);"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+</div>	
+</div>	
+</div>
+</div>	
+</body>
+</html>
